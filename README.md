@@ -1,2 +1,2 @@
-# Outreachy contribution on wikimedia
-This repository contains my code for the wikimedia project
+# Outreachy contribution
+This repository contains my code for the Outreachy projects
