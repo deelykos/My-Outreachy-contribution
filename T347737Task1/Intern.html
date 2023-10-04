@@ -30,23 +30,23 @@
 
             // YOUR CODE HERE
             // getting the results element
-        const resultsElement = document.getElementById("results");
+            const resultsElement = document.getElementById("results");
 
-        // looping through and formatting each entry in the data
-        data.forEach(dataEntry => {
-            const pageId = dataEntry.page_id;
-            const title = dataEntry.title;
-            const creationDate = new Date(dataEntry.creation_date);
-            const formattedDate = creationDate.toLocaleDateString("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-            });
+            // looping through and formatting each entry in the data
+            data.forEach(dataEntry => {
+                const pageId = dataEntry.page_id;
+                const title = dataEntry.title;
+                const creationDate = new Date(dataEntry.creation_date);
+                const formattedDate = creationDate.toLocaleDateString("en-US", {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric",
+                });
 
             // Creating a formatted string
             const formattedDataEntry = `Article "${title}" (Page ID ${pageId}) was created at ${formattedDate}.<br>`;
             resultsElement.innerHTML += formattedDataEntry;
-        });
+           });
         </script>
         <script>
             document.getElementById("code").innerText = document.getElementById("task_id").text;
